@@ -14,11 +14,29 @@ const body = Work_Sans({
   variable: "--font-body",
 });
 
+// If you attach a custom domain later, update this to match.
+const siteUrl = "https://brethren-feedback-2rgq.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "A Safe Space — The Brethren",
   description:
     "Share a concern, a problem, or feedback with The Brethren's leadership — anonymously. No names, no email, no tracking.",
   robots: { index: false, follow: false },
+  openGraph: {
+    title: "A Safe Space — The Brethren",
+    description:
+      "Share a concern, a problem, or feedback with The Brethren's leadership — anonymously.",
+    url: siteUrl,
+    siteName: "The Brethren",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "A Safe Space — The Brethren",
+    description:
+      "Share a concern, a problem, or feedback with The Brethren's leadership — anonymously.",
+  },
 };
 
 export default function RootLayout({
