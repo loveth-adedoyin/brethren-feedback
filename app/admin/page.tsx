@@ -3,6 +3,7 @@ import LoginForm from "./login-form";
 import Dashboard from "./dashboard";
 
 export const metadata = {
+  title: "Admin sign-in — The Brethren",
   robots: { index: false, follow: false },
 };
 
